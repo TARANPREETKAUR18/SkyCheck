@@ -1,0 +1,98 @@
+.detail {
+    display: flex;  /* To make layout responsive and to centre align things*/
+  }
+  /*alpha- opacity(1->dark, 0->remove transparency)*/
+  /* Importing google fonts */
+  @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
+  
+  body {
+    display: flex;
+    overflow-x: hidden; /* To hide the excess image going out of the screen */
+    justify-content: center !important; /*justify content:x-axis*/
+    margin: 0;
+    font-family: "Dosis", sans-serif;
+    font-family: "Comforter Brush", cursive;
+    background-image: url("http://source.unsplash.com/collection/3178572,357786/1600x900"); /*Import image from unsplash.com*/
+    align-items: center;/*align items: y-axis*/
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem; /*In pixel, rem, em, %age*/
+  }
+  
+  .container {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 25px;
+    text-align: center;
+  }
+  
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .search button {
+    border-radius: 40%;
+    border: none;
+    height: 3em;
+    width: 3em;
+    margin: 0.5em;
+    background: #6c6c6c2b;
+    color: white;
+  }
+  
+  .search button:hover {
+    background: #6c6c6c6b;
+    cursor: pointer;
+  }
+  
+  .sbar {
+    background: #6c6c6c2b;
+    padding: 1em;
+    border-radius: 25px;
+    width: 50%;
+    height: 9px;
+    color: white;
+    outline: none;
+  }
+  
+  .detail {
+    display: flex;
+    margin: 10px;
+    position: relative;
+    left: 37rem;
+    flex-direction: row;
+  }
+  
+  .temp {
+    font-size: 30px;
+    padding: 10px;
+  }
+  
+  .svg-icon {
+    width: 1.8em;
+    height: 1em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: white;
+  }
+  
+  .svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+  }
+  
+  #future {
+    display: none; 
+    /* used with JavaScript to hide and show elements without deleting and recreating them. */
+  }
+  
